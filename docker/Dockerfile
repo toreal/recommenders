@@ -27,7 +27,7 @@ ENV PATH="${HOME}/conda/bin:${PATH}"
 
 # Clone Recommenders repo
 ARG BRANCH="master"
-RUN git clone --depth 1 --single-branch -b ${BRANCH} https://github.com/microsoft/recommenders
+RUN git clone --depth 1 --single-branch -b ${BRANCH} https://github.com/toreal/recommenders
 
 # Setup Jupyter notebook configuration
 ENV NOTEBOOK_CONFIG="${HOME}/.jupyter/jupyter_notebook_config.py"
